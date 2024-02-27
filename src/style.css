@@ -58,7 +58,80 @@ body {
 
 .card {
     padding-left: 100px;
-    background-color: gainsboro;
     margin-top: 50px;
-    
+    margin-bottom: 50px;
+}
+
+.card--review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.card--img {
+    width: 176px;
+    height: 235px;
+    border-radius: 9px;
+}
+
+.card--star {
+    width: 14px;
+    height: 14px;
+}
+
+.card--review--dotImg {
+    width: 2px;
+    height: 2px;
+}
+
+.card--review--rating, .card--review--count, .card--review--country {
+    width: 18px;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%; /* 13.2px */
+}
+
+.card--review--rating {
+    color: #222;
+    margin: 0 3px;
+}
+.card--review--count, .card--review--country {
+    color: #918E9B;
+}
+
+.card--review--dotImg {
+    margin: 0px 3px;
+}
+
+.card--title {
+    width: 175px;
+    height: 14px;
+    color: #222;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 110%; /* 13.2px */
+}
+
+.card--title > p, .card--price > p  {
+    margin: 0;
+    padding: 0;
+}
+
+.card--price > p, .card--price p > span {
+    color: #222;
+    font-size: 12px;
+    line-height: 110%; /* 13.2px */
+}
+
+.card--price {
+    margin-top: 8px;
+}
+
+.card--price > p {
+    font-weight: 300;
+}
+
+.card--price p > span {
+    font-weight: 600;
 }
