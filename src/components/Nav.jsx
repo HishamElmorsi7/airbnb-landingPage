@@ -1,4 +1,4 @@
-import airbnbLogo from '../assets/airbnb-logo.svg'
+import airbnbLogo from '/assets/airbnb-logo.svg'
 function Nav() {
     return (
         <nav className="nav">

@@ -1,24 +1,33 @@
-import bikeImg from '../assets/bike.jpeg'
-import starImg from '../assets/star.svg'
-import dotImg from '../assets/dot.svg'
-export default function Card() {
+import starImg from '/assets/star.svg'
+import dotImg from '/assets/dot.svg'
+
+export default function Card(props) {
+    let badgeText;
+    if(props.item.openSpots === 0) {
+        badgeText = 'SOLD OUT'
+    } else if (props.item.location === 'Online') {
+        badgeText= 'ONLINE'
+    }
+
+
     return(
         <section className="card">
-            <img className='card--img' src={bikeImg} />
+            {badgeText && <div className='badge'>{badgeText}</div>}
+            <img className='card--img' src={`/assets/${props.item.coverImg}`} />
             <div className="card--review">
                 <img className='card--star' src={starImg} />
-                <p className='card--review--rating'>5.0</p>
-                <p className='card--review--count'>(6)</p>
+                <p className='card--review--rating'>{props.item.stats.rating}</p>
+                <p className='card--review--count'>({props.item.stats.reviewCount})</p>
                 <img className='card--review--dotImg' src={dotImg}/>
-                <p className='card--review--country'>USA</p>
+                <p className='card--review--country'>{props.item.location}</p>
             </div>
 
             <div className='card--title'>
-                <p>Life lessons with Katie Zaferes</p>
+                <p>{props.item.title}</p>
             </div>
 
             <div className='card--price'>
-                <p><span>From $136</span> / person</p>
+                <p><span>From ${props.item.price}</span> / person</p>
             </div>
         </section>
     )

@@ -1,4 +1,4 @@
-import heroGrid from '../assets/hero-grid.png'
+import heroGrid from '/assets/hero-grid.png'
 function Hero(){
     return (
         <section className='hero'>
