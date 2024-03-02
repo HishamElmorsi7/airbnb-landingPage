@@ -1,8 +1,20 @@
-# React + Vite
+# Airbnb landing page built with React 🏡
+link: https://airbnbx.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run the project locally:
 
-Currently, two official plugins are available:
+1.Install dependencies:
+```
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. For Dev running
+```
+npm run dev
+```
+
+3. For building for production
+
+```
+npm run build
+```
